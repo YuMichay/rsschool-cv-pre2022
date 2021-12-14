@@ -78,6 +78,12 @@ function maxSum(root) {
 
 ---
 
+### My works
+
+* <https://yumichay-momentum.netlify.app/> - Momentum (RS School task)
+
+* <https://yumichay-museum-adaptive.netlify.app/> - Museum (RS School task)
+
 ### Education
 
 ---
