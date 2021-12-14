@@ -6,7 +6,7 @@
 
 ---
 
-![photo](./FSPPE4525s)
+![photo](FSPPE4525sqr.jpg)
 
 ---
 
@@ -15,9 +15,13 @@
 ---
 
 *Phone:* +375 (25) 791-58-17
+
 *E-mail:* julia.one.such@gmail.com
+
 *Telegram:* @YuliyaMrr
+
 *GitHub:* [YuMichay](https://github.com/YuMichay)
+
 *Discord:* Yuliya Mizhevich(YuMichay)#0692
 
 ---
@@ -38,9 +42,6 @@ I like to see the result of my work and share it with everyone. That's why I cho
 * CSS, SASS(basic)
 * JavaScript
 * NodeJS (basic)
-
-===
-
 * Webpack
 * Git, GitHub
 * VS Code, WebStorm
@@ -52,6 +53,7 @@ I like to see the result of my work and share it with everyone. That's why I cho
 ---
 
 *CodeWars task:*  Implement the method maxSum which returns the maximal sum of a route from root to leaf.
+
 *My solution:*
 
 ```javascript
