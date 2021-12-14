@@ -6,7 +6,7 @@
 
 ---
 
-![photo](FSPPE4525sqr.jpg)
+![photo](FSPPE4525.jpg)
 
 ---
 
