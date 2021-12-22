@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#main">Beginning</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Code Example</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#works">My Works</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#english">English level</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+    <section id="main">
+        <img class="photo" src="/FSPPE4525.jpg" alt="photo">
+        <div class="main-text">
+            <h1 title="Yes, it's meee">Yuliya Mizhevich</h1>
+            <h2>Junior Frontend Developer</h2>
+        </div>
+    </section>
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <div class="contacts">
+            <p><a href="mailto:julia.one.such@gmail.com" target="_blank" title="I'm waiting an offer!">E-mail: julia.one.such@gmail.com</a></p>
+            <p><a href="tel:+375257915817" target="_blank" title="Call me maybe!">Phone: +375257915817</a></p>
+            <p><a href="@YuliyaMrr" target="_blank">Telegram: @YuliyaMrr</a></p>
+            <p><a href="https://github.com/YuMichay" target="_blank" title="You can see all my attempts)">GitHub: YuMichay</a></p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About me</h2>
+        <p title="I can tell more, but I think it's the most important">I like to see the result of my work and share it with everyone. That's why I chose Front-end development. There is a place for creativity and technical thinking. Now I'm improving my skills and looking for a place where I can show them and get new ones.</p>
+    </section>
+    <section id="skills">
+        <h2>Personal qualities</h2>
+        <ul class="skills">
+            <li>Thorough</li>
+            <li title="I wanna know everything!">Inquisitive</li>
+            <li>Accountable</li>
+            <li title="meow^-^">Friendly</li>
+            <li title="O_O">Smart</li>
+        </ul>
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS, SASS(basic)</li>
+            <li>JavaScript</li>
+            <li>NodeJS (basic)</li>
+            <li>Webpack</li>
+            <li>Git, GitHub</li>
+            <li>VS Code, WebStorm</li>
+        </ul>
+    </section>
+    <section id="code">
+        <h2>Code Example</h2>
+        <p>CodeWars task:  Implement the method maxSum which returns the maximal sum of a route from root to leaf.</p>
+        <p>My solution:</p>
+        <div class="code">
+            <code>
+                function maxSum(root) { <br>
+                    if(!root) return 0; <br>
+                    let leftSum =  Math.max(maxSum(root.left) + root.value); <br>
+                    let rightSum = Math.max(maxSum(root.right) + root.value); <br>
+                    return Math.max(leftSum, rightSum); <br>
+                    }
+            </code>
+        </div>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <h4>IT:</h4>
+        <p>RS School(PreSchool, JavaScript/FE - stage1)</p>
+        <h4>Other:</h4>
+        <p>LLC "OZ Books" - seller</p>
+        <p>LLC "Triovist" - administrator</p>
+    </section>
+    <section id="works">
+        <h2>My works</h2>
+        <div class="works">
+            <figure>
+                <img src="/momentum.jpg" alt="momentum">
+                <figcaption>
+                    <a href="https://yumichay-momentum.netlify.app/" target="_blank">Momentum (RS School task)</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/museum.jpg" alt="museum">
+                <figcaption>
+                    <a href="https://yumichay-museum-adaptive.netlify.app/" target="_blank">Museum (RS School task)</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <h3>Courses</h3>
+        <ul>
+            <li>CS50</li>
+            <li>RS School(PreSchool, JavaScript/FE - stage1)</li>
+            <li>Hyperskill (JetBrains Academy)</li>
+            <li>Hexlet</li>
+            <li>Stepik</li>
+        </ul>
+        <h3>College</h3>
+        <p>The Minsk College of Finance and Economics - 2014-2016 (Accounting)</p>
+        <h3>University</h3>
+        <p>Belarusian State University of Economics - 2016-2020 (not finished, Accounting)</p>
+    </section>
+    <section id="english">
+        <h2>English level</h2>
+        <p>A2/B1 - I can talk about general life topics and tell about myself. I'm good at listening to English. And I can read technical literature.</p>
+    </section>
+    </main>
+<footer>
+    <a href="https://github.com/YuMichay">GitHub</a>
+    <a href="https://rs.school/js/">RS School</a>
+    <img class="logo" src="/rs_school_js.svg" alt="logo">
+    <p>2021</p>
+</footer>
+</body>
+</html>
