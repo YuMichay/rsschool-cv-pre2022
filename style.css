@@ -13,25 +13,27 @@ body {
 
 img {
     width: 60%;
+    border-radius: 10%;
+    box-shadow: 0.5rem 0.5rem 0.2rem 0.1rem rgba(78, 31, 124, 0.8);
+}
+
+figcaption {
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    text-shadow: 0.1rem 0.1rem rgba(192, 130, 253, 0.8);
 }
 
 .logo {
     width: 5%;
+    box-shadow: none;
 }
 
 .photo {
     width: 20%;
     border-radius: 50%;
     z-index: 10;
-}
-
-.circle1 {
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    transform: translate(-1rem, 1rem);
+    box-shadow: 1rem 1rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -1rem -1rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);
+    animation: photo-box 1s ease-in-out infinite;
 }
 
 .contacts {
@@ -44,6 +46,7 @@ nav>ul, footer {
     justify-content: space-between;
     align-items: baseline;
     padding: 0.5rem;
+    text-shadow: 0.1rem 0.1rem rgba(192, 130, 253, 0.8);
 }
 
 .works {
@@ -54,6 +57,7 @@ nav>ul, footer {
 
 header>nav>ul>li {
     list-style: none;
+    text-shadow: 0.1rem 0.1rem rgba(192, 130, 253, 0.8);
 }
 
 header {
@@ -67,7 +71,7 @@ a {
 }
 
 #main {
-    padding: 5.5rem 0 1rem;
+    padding: 8rem 0 0.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,12 +87,26 @@ pre {
 
 section {
     padding: 1rem 6rem;
+    transition: 0.5s ease-in-out;
+}
+
+section:hover {
+    width: 98%;
+    transform: translate(1rem, 1rem);
+    box-shadow: -0.2rem -0.2rem 0.2rem 0.2rem rgba(78, 31, 124, 0.8);
+    transition: 1s ease-in-out;
+}
+
+section:first-child:hover {
+    width: 100%;
+    transform: none;
 }
 
 h1, h2, h3, h4 {
     padding: 1rem 2rem;
     font-family: 'Pushster', cursive;
     z-index: 10;
+    text-shadow: 0.1rem 0.1rem rgba(192, 130, 253, 0.8);
 }
 
 p {
@@ -96,7 +114,7 @@ p {
 }
 
 .skills>li {
-    padding: 0.5rem 0; 
+    padding: 0.5rem 0;
 }
 
 a {
@@ -106,4 +124,14 @@ a {
 a:hover  {
     color: #c082fd;
     border-bottom: 2px solid #c082fd;
+    text-shadow: 0.1rem 0.1rem rgba(78, 31, 124, 0.8);
+}
+
+@keyframes photo-box {
+    0% {box-shadow: 1rem 1rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -1rem -1rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
+    20% {box-shadow: 0.7rem 0.7rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -0.7rem -0.7rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
+    40% {box-shadow: 0.5rem 0.5rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -0.5rem -0.5rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
+    60% {box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -0.3rem -0.3rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
+    80% {box-shadow: 0.5rem 0.5rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -0.5rem -0.5rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
+    100% {box-shadow: 1rem 1rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -1rem -1rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
 }
