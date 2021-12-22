@@ -19,7 +19,6 @@ img {
 
 figcaption {
     padding-top: 1.5rem;
-    padding-left: 1rem;
     text-shadow: 0.1rem 0.1rem rgba(192, 130, 253, 0.8);
 }
 
@@ -77,8 +76,9 @@ a {
     align-items: center;
 }
 
-pre {
+.code {
     border: 3px solid #c082fd;
+    padding: 0.5rem;
 }
 
 .main-text {
@@ -87,6 +87,7 @@ pre {
 
 section {
     padding: 1rem 6rem;
+    width: 100%;
     transition: 0.5s ease-in-out;
 }
 
@@ -134,4 +135,57 @@ a:hover  {
     60% {box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -0.3rem -0.3rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
     80% {box-shadow: 0.5rem 0.5rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -0.5rem -0.5rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
     100% {box-shadow: 1rem 1rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -1rem -1rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
+}
+
+@media (max-width: 720px) {
+    section:hover {
+        width: 93%;
+    }
+
+    nav>ul, footer {
+        flex-wrap: wrap;
+    }
+
+    li, p, code {
+        font-size: 14px;
+    }
+
+    .works {
+        flex-direction: column;
+    }
+
+    * {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    #skills>ul>li, #education>ul>li {
+        list-style: none;
+        margin-left: -2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    code {
+        font-size: 12px;
+    }
+
+    header>nav>ul>li {
+        padding-bottom: 0.2rem;
+    }
 }

@@ -72,16 +72,16 @@
         <h2>Code Example</h2>
         <p>CodeWars task:  Implement the method maxSum which returns the maximal sum of a route from root to leaf.</p>
         <p>My solution:</p>
-        <pre>
+        <div class="code">
             <code>
-            function maxSum(root) {
-                if(!root) return 0;
-                let leftSum =  Math.max(maxSum(root.left) + root.value);
-                let rightSum = Math.max(maxSum(root.right) + root.value);
-                return Math.max(leftSum, rightSum);
-                }
+                function maxSum(root) { <br>
+                    if(!root) return 0; <br>
+                    let leftSum =  Math.max(maxSum(root.left) + root.value); <br>
+                    let rightSum = Math.max(maxSum(root.right) + root.value); <br>
+                    return Math.max(leftSum, rightSum); <br>
+                    }
             </code>
-        </pre>
+        </div>
     </section>
     <section id="experience">
         <h2>Experience</h2>
