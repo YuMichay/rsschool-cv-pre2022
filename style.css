@@ -96,6 +96,7 @@ section:hover {
     transform: translate(1rem, 1rem);
     box-shadow: -0.2rem -0.2rem 0.2rem 0.2rem rgba(78, 31, 124, 0.8);
     transition: 1s ease-in-out;
+    padding: 1rem 4.5rem;
 }
 
 section:first-child:hover {
@@ -135,6 +136,12 @@ a:hover  {
     60% {box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -0.3rem -0.3rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
     80% {box-shadow: 0.5rem 0.5rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -0.5rem -0.5rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
     100% {box-shadow: 1rem 1rem 0.5rem 0.3rem rgba(192, 130, 253, 0.8), -1rem -1rem 0.5rem 0.3rem rgba(255, 255, 255, 0.8);}
+}
+
+@media (max-width: 1440px) {
+    section:hover {
+        padding: 1rem 4.6rem;
+    }
 }
 
 @media (max-width: 720px) {
@@ -181,6 +188,10 @@ a:hover  {
 }
 
 @media (max-width: 420px) {
+    section:hover {
+        padding: 1rem 5.2rem;
+    }
+
     code {
         font-size: 12px;
     }
